@@ -10,7 +10,7 @@ class AwsSsoCreds < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kenXengineering/aws-sso-creds/releases/download/v2.0.0/aws-sso-creds-v2.0.0-darwin-arm64.tar.gz"
-      sha256 "4800906bc02531f3e17b422ec2b444b7d8134d8b8059c76e0132340fc53b6679"
+      sha256 "b70347700ec4db675d61580f816a281a94aff47ca990ec6513cee9b8e808d257"
 
       def install
         bin.install "aws-sso-creds"
@@ -18,7 +18,7 @@ class AwsSsoCreds < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/kenXengineering/aws-sso-creds/releases/download/v2.0.0/aws-sso-creds-v2.0.0-darwin-amd64.tar.gz"
-      sha256 "e7b0d700e45b2fe54dd576f2efddc5b620947649ecf5570d7e878e1d9675986c"
+      sha256 "74163bc3cf229468b4cc8dc933cd4d7e4f83b98ee5a5170e2ed81ebb5995f1a6"
 
       def install
         bin.install "aws-sso-creds"
@@ -29,7 +29,7 @@ class AwsSsoCreds < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kenXengineering/aws-sso-creds/releases/download/v2.0.0/aws-sso-creds-v2.0.0-linux-arm64.tar.gz"
-      sha256 "4c1dba4fb96807c59c79616a8bb75e40f5420575c39ce87d88ad0ab548e0ecbb"
+      sha256 "a4d0290ff7187e2f57e9b3db9d40805c728d17984aa87acda14b8f7ee7df00db"
 
       def install
         bin.install "aws-sso-creds"
@@ -37,7 +37,7 @@ class AwsSsoCreds < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/kenXengineering/aws-sso-creds/releases/download/v2.0.0/aws-sso-creds-v2.0.0-linux-amd64.tar.gz"
-      sha256 "e5400cb705406458b1c6874d584aa9c4a8697bd6e743bd68797d123060dca269"
+      sha256 "4e2e23d0fa60d075d67c6d9cf60d075b91ed426ec07e4b1852f9b67ce6195284"
 
       def install
         bin.install "aws-sso-creds"
