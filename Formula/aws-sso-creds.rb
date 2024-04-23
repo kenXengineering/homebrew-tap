@@ -5,20 +5,20 @@
 class AwsSsoCreds < Formula
   desc "Helper utility to get temporary credentials from AWS SSO."
   homepage "https://google.com"
-  version "2.0.0"
+  version "2.1.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kenXengineering/aws-sso-creds/releases/download/v2.0.0/aws-sso-creds-v2.0.0-darwin-arm64.tar.gz"
-      sha256 "b70347700ec4db675d61580f816a281a94aff47ca990ec6513cee9b8e808d257"
+      url "https://github.com/kenXengineering/aws-sso-creds/releases/download/v2.1.0/aws-sso-creds-v2.1.0-darwin-arm64.tar.gz"
+      sha256 "cd676117697ff742994bb1ac5026fa9c69aed1c50fa5c0032a06c48ac0ec6817"
 
       def install
         bin.install "aws-sso-creds"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kenXengineering/aws-sso-creds/releases/download/v2.0.0/aws-sso-creds-v2.0.0-darwin-amd64.tar.gz"
-      sha256 "74163bc3cf229468b4cc8dc933cd4d7e4f83b98ee5a5170e2ed81ebb5995f1a6"
+      url "https://github.com/kenXengineering/aws-sso-creds/releases/download/v2.1.0/aws-sso-creds-v2.1.0-darwin-amd64.tar.gz"
+      sha256 "2e204abda8e4cf5238b268d23059a04d913af59c3b132fda4692cef0aa33c1db"
 
       def install
         bin.install "aws-sso-creds"
@@ -28,16 +28,16 @@ class AwsSsoCreds < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kenXengineering/aws-sso-creds/releases/download/v2.0.0/aws-sso-creds-v2.0.0-linux-arm64.tar.gz"
-      sha256 "a4d0290ff7187e2f57e9b3db9d40805c728d17984aa87acda14b8f7ee7df00db"
+      url "https://github.com/kenXengineering/aws-sso-creds/releases/download/v2.1.0/aws-sso-creds-v2.1.0-linux-arm64.tar.gz"
+      sha256 "ab0f7ae2a871f1a68be03ceaeea2a2bacbae2bf107ada2190009b3ac0fa8fb19"
 
       def install
         bin.install "aws-sso-creds"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kenXengineering/aws-sso-creds/releases/download/v2.0.0/aws-sso-creds-v2.0.0-linux-amd64.tar.gz"
-      sha256 "4e2e23d0fa60d075d67c6d9cf60d075b91ed426ec07e4b1852f9b67ce6195284"
+      url "https://github.com/kenXengineering/aws-sso-creds/releases/download/v2.1.0/aws-sso-creds-v2.1.0-linux-amd64.tar.gz"
+      sha256 "7621df8135357f0ff284160f54e0e3ce28c2fc4424a9e2df59685861b6a6e64f"
 
       def install
         bin.install "aws-sso-creds"
